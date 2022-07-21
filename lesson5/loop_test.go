@@ -38,6 +38,12 @@ func TestSwitchMultiCase(t *testing.T) {
 
 func TestSwitchCaseCondition(t *testing.T) {
 	//在case中进行条件判断
+	/*这种写法更像
+		if
+		elseif
+		else
+	的写法
+	*/
 	for i := 0; i < 5; i++ {
 		switch {
 		case i%2 == 0:
