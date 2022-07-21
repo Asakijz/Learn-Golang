@@ -35,3 +35,17 @@ func TestSwitchMultiCase(t *testing.T) {
 		}
 	}
 }
+
+func TestSwitchCaseCondition(t *testing.T) {
+	//在case中进行条件判断
+	for i := 0; i < 5; i++ {
+		switch {
+		case i%2 == 0:
+			t.Log(i, " is a Even number")
+		case i%2 == 1:
+			t.Log(i, " is a Odd number")
+		default:
+			t.Log(i, " is not a 0-3 number")
+		}
+	}
+}
